@@ -30,7 +30,20 @@ gtag('js', new Date());
 gtag('config', 'G-MNDGMHFYPE');
 </script>
 </head>
-
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+const botonAfiliado = document.querySelector('.btn');
+if (botonAfiliado) {
+botonAfiliado.addEventListener('click', function () {
+gtag('event', 'click_afiliado', {
+event_category: 'conversion',
+event_label: 'Botón Accede Ahora',
+transport_type: 'beacon'
+});
+});
+}
+});
+</script>
 <body>
 <div class="logo-flotante">
 <img src="img/logo.png" alt="Logo Tienda MZV">
