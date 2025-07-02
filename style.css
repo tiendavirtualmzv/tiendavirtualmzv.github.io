@@ -8,16 +8,7 @@ body {
   background-repeat: no-repeat;
   color: #333;
 }
-.logo-flotante {
-position: fixed;
-bottom: 20px;
-right: 20px;
-width: 60px !important;
-height: auto !important;
-opacity: 0.6;
-z-index: 999;
-display: block;
-}
+
 header {
   background: #007bff;
   color: white;
@@ -92,6 +83,16 @@ color: #FFFFFF; /* Cambialo por el color que prefieras */
 text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
+.logo-flotante img {
+position: fixed;
+bottom: 20px;
+right: 20px;
+width: 60px !important;
+height: auto !important;
+opacity: 0.6;
+z-index: 999;
+display: block !important;
+}
 @media screen and (max-width: 480px) {
 .logo-flotante {
 width:45px !important;
